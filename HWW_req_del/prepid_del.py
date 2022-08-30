@@ -4,4 +4,5 @@ prepid = 'HIG-RunIISummer20UL16wmLHEGEN-12039, HIG-RunIISummer20UL16wmLHEGEN-120
 
 
 ls = prepid.split(",") 
+ls = ls = [l.strip() for l in ls]
 print(ls)
