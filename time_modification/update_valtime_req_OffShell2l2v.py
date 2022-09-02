@@ -33,12 +33,116 @@ def get_requests_from_datasetname(dn):
 for  pid in ls:
     print pid
     req = mcm.get('requests', pid)
-    print req['validation']
     if req==None :
       print( "request don't exist")
     else:
-      #req['validation'] =  # Why its wowrking with squrare brackets ?
-      #print req['validation']
-      #mcm.update('requests', req)
+      req['validation'] = {u'time_multiplier': 1}  
+      mcm.update('requests', req)
       #request2 = mcm.get('requests', pid)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
