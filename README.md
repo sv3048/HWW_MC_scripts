@@ -1,3 +1,11 @@
 # HWW_MC_scripts
 --> Spreadhseet for Off Shell and AC samples
 https://docs.google.com/spreadsheets/d/1VYTHEZw3VJfV1jhOKrNpUDTUS-zE5xgVPQhryWFgypk/edit#gid=0
+
+Note : 
+
+1. modify_req_time.py
+2. test_delete.py 
+
+These both files are working with --prepid only 
+But when it comes to a range there arises the issue.
