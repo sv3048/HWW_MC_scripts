@@ -14,8 +14,8 @@ mcm     = McM(dev = False, debug = True)
 
 
 #import list of requests need to be deleted
-import prepid_update_vf
-from prepid_update_vf import ls
+import prepid_2update
+from prepid_2update  import ls
 
 
 def get_request(prepid):
@@ -35,10 +35,17 @@ def get_requests_from_datasetname(dn):
 for  pid in ls:
     print pid
     req = mcm.get('requests', pid)
+    print req['time_event']
     if req==None :
       print( "request don't exist")
     else: 
-      req['time_event'] = 102
-      mcm.update('requests', req) 
+      req['time_event'] = [300]
+      print req['time_event']
+      mcm.update('requests', req)
+      #print updated_req
+      #new_time_event = updated_req['time_event']
+      #print (new_time_event)
+      #request2 = mcm.get('requests', pid) 
        
+
      
