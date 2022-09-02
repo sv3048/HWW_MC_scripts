@@ -39,12 +39,9 @@ for  pid in ls:
     if req==None :
       print( "request don't exist")
     else: 
-      req['time_event'] = [300]
+      req['time_event'] = [300] # Why its wowrking with squrare brackets ?
       print req['time_event']
       mcm.update('requests', req)
-      #print updated_req
-      #new_time_event = updated_req['time_event']
-      #print (new_time_event)
       #request2 = mcm.get('requests', pid) 
        
 
