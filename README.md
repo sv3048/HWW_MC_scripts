@@ -4,7 +4,7 @@ https://docs.google.com/spreadsheets/d/1VYTHEZw3VJfV1jhOKrNpUDTUS-zE5xgVPQhryWFg
 
 Note : 
 
-Issue 1:
+##Issue 1:
 
 1. modify_req_time.py
 2. test_delete.py 
@@ -14,8 +14,8 @@ These both files are working with --prepid only
 But when it comes to a range there arises the issue.
 
 
-Issue 2:
+##Issue 2:
 how to reset request -> its not resetting if its in validation-none state
 - with macro and also manually
 
-leftover requests: approx 25 to set the time/event and send to the validation
+##leftover requests: approx 25 to set the time/event and send to the validation
