@@ -12,8 +12,8 @@ mcm     = McM(dev = False, debug = True)
 
 
 #import list of requests need to be deleted
-import prepid_2update
-from prepid_2update  import ls
+import prepid_2update_v1
+from prepid_2update_v1  import ls
 
 
 def get_request(prepid):

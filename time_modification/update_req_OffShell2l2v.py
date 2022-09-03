@@ -14,8 +14,8 @@ mcm     = McM(dev = False, debug = True)
 
 
 #import list of requests need to be deleted
-import prepid_2update
-from prepid_2update  import ls
+import prepid_2update_vf
+from prepid_2update_vf  import ls
 
 
 def get_request(prepid):
@@ -39,9 +39,10 @@ for  pid in ls:
     if req==None :
       print( "request don't exist")
     else: 
-      req['time_event'] = [300] # Why its wowrking with squrare brackets ?
-      print req['time_event']
-      mcm.update('requests', req)
+      #req['time_event'] = [9] # Why its wowrking with squrare brackets ?
+      #print req['time_event']
+      #mcm.update('requests', req)
+      mcm.approve('requests', pid, 0)
       #request2 = mcm.get('requests', pid) 
        
 
